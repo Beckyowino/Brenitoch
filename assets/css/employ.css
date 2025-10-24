@@ -13,16 +13,11 @@
 }
 
 .section-header h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--heading-color);
+  font-size: 2 rem;
 }
 
 .section-header p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
-  color: var(--default-color);
+  font-size: 1.1rem;
 }
 
 /* Employment Hero */

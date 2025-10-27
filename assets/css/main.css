@@ -8231,3 +8231,118 @@ section,
   /* Add your styles here */
 }
 
+
+/* --------------------------------------------------------------
+   FEES PAGE – PAYMENT METHODS & ACCOUNT INFO
+   -------------------------------------------------------------- */
+
+/* 1. Payment methods (Bank Transfer • M‑Pesa • …) */
+.fees-payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;               /* space between items */
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--default-color);
+}
+
+/* each method gets a bullet after it (except the last) */
+.fees-payment-methods span {
+  position: relative;
+  white-space: nowrap;
+}
+.fees-payment-methods span:not(:last-child)::after {
+  content: "•";
+  position: absolute;
+  right: -1rem;              /* distance from text to bullet */
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* 2. Account details (Account Name | Bank | A/C) */
+.fees-account-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;               /* space between items */
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color:Cuisine var(--default-color);
+}
+
+/* bullet after each item except the last */
+.fees-account-details span {
+  position: relative;
+  white-space: nowrap;
+}
+.fees-account-details span:not(:last-child)::after {
+  content: "•";
+  position: absolute;
+  right: -1rem;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------
+   RESPONSIVE – stack on small screens
+   -------------------------------------------------------------- */
+@media (max-width: 576px) {
+  .fees-payment-methods,
+  .fees-account-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .fees-payment-methods span:not(:last-child)::after,
+  .fees-account-details span:not(:last-child)::after {
+    content: none;          /* no bullets when stacked */
+  }
+}
+
+  /* === DROP CAP STYLING === */
+  .drop-cap::first-letter {
+    float: left;
+    font-size: 5rem;
+    line-height: 0.75;
+    margin-right: 0.7rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    font-family: var(--heading-font);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+
+  /* === IMAGE ENHANCEMENT === */
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .transition-zoom {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .transition-zoom:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(105, 13, 18, 0.2) !important;
+  }
+
+  /* === RESPONSIVE DROP CAP === */
+  @media (max-width: 992px) {
+    .drop-cap::first-letter {
+      font-size: 4rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .drop-cap::first-letter {
+      font-size: 3.2rem;
+      margin-right: 0.4rem;
+    }
+    .drop-cap {
+      font-size: 1.1rem !important;
+    }
+  }
+
+  

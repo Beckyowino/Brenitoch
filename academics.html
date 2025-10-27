@@ -35,62 +35,70 @@
 <body class="academics-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <img src="assets/img/logoo.png" alt="School Logo">
-            </a>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logoo.png" alt="School Logo">
+      </a>
 
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li class="dropdown"><a href="about.html"><span>About</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="students-life.html">Student Life</a></li>
-                            <li><a href="campus-facilities.html">School Facilities &amp; Programs</a></li>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Our School</a></li>
+          <!-- <li class="dropdown"><a href="about.html"><span>About</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="our-facilities.html">School Facilities &amp; Programs</a></li>
 
-                        </ul>
-                    </li>
+            </ul>
+          </li> -->
 
-                    <li><a href="admissions.html">Admissions</a></li>
-                    <li><a href="academics.html">Academics</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="alumni.html">Alumni</a></li>
-                    <li><a href="employ.html">Employment</a></li>
-                    <li class="dropdown"><a href="#"><span>Quick Links</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="select-btw.html">Business plan &amp; school polices</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="accomodation.html">Student Accommodation Info</a></li>
-                            <li><a href="scholarship-aid.html">Financial Aid &amp; Scholarships</a></li>
-                            <li><a href="portal.html">Portal Login</a></li>
-                            <li><a href="community.html">Community Engagement</a></li>
-                            <li><a href="news.html">News</a></li>
-                        </ul>
-                    </li>
+          <li><a href="about.html" class="active">About Us</a></li>
 
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
+          <li class="dropdown">
+            <a href="admissions.html"><span>Admissions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="admissions.html">Admission Process</a></li>
+              <li><a href="fees.html">Fees</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="academics.html"><span>Academics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="academics.html">Academics</a></li>
+              <li><a href="students-life.html">Extra-Curricular</a></li>
+            </ul>
+          </li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="employ.html">Employment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown"><a href="#"><span>Quick Links</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="accomodation.html">Student Accommodation Info</a></li>
+              <li><a href="scholarship-aid.html">Financial Aid &amp; Scholarships</a></li>
+              <li><a href="community.html">Community Engagement</a></li>
+              <li><a href="portal.html">Portal Login</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-        </div>
-    </header>
+    </div>
+  </header>
 
   <main class="main">
     <!-- Page Title -->
     <div class="page-title dark-background" style="background-image: url(assets/img/education/showcase-1.webp);">
       <div class="container position-relative">
         <h1>Academics</h1>
-        <p>Explore our diverse academic programs designed to foster curiosity, critical thinking, and lifelong learning
-          at Brenitoch Schools.</p>
+        <!-- <p>Explore our diverse academic programs designed to foster curiosity, critical thinking, and lifelong learning
+          at Brenitoch Schools.</p> -->
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Our School</a></li>
             <li class="current">Academics</li>
           </ol>
         </nav>
@@ -147,7 +155,7 @@
                     <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#academics-all"
                       type="button" role="tab">
                       <span class="icon"><i class="bi bi-grid-3x3-gap"></i></span>
-                      <span class="text">Our Programs</span>
+                      <span class="text">Our Stages</span>
                     </button>
                   </li>
                 </ul>
@@ -156,125 +164,183 @@
           </div>
         </div>
 
-        <div class="tab-content programs-content" data-aos="fade-up" data-aos-delay="200">
-          <!-- All Programs Tab -->
-          <div class="tab-pane fade show active" id="academics-all" role="tabpanel">
-            <div class="row g-4">
-              <!-- Preschool -->
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-                <div class="program-item undergraduate">
+        <!-- Programs Slideshow (Taller Images, More Spacing, Uniform Colors) -->
+        <div class="programs-slider mb-5 py-5" data-aos="fade-up">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+      {
+        "loop": true,
+        "speed": 800,
+        "autoplay": {
+          "delay": 5000,
+          "disableOnInteraction": false
+        },
+        "slidesPerView": 1,
+        "spaceBetween": 40,
+        "breakpoints": {
+          "768": { "slidesPerView": 2 },
+          "992": { "slidesPerView": 3 }
+        },
+        "direction": "horizontal",
+        "rtl": true,
+        "effect": "slide",
+        "pagination": {
+          "el": ".programs-slider .swiper-pagination",
+          "clickable": true
+        },
+        "navigation": {
+          "nextEl": null,
+          "prevEl": null
+        }
+      }
+    </script>
+
+            <div class="swiper-wrapper">
+
+              <!-- Slide: Preschool -->
+              <div class="swiper-slide">
+                <div class="program-item undergraduate h-100 d-flex flex-column shadow-sm rounded overflow-hidden">
                   <div class="program-header">
-                    <img src="assets/img/education/programs/preschool-1.jpeg" alt="Preschool" class="img-fluid dark-background">
+                    <img src="assets/img/education/programs/preschool-1.jpeg" alt="Preschool" class="img-fluid w-100"
+                      style="height: 240px; object-fit: cover;">
                   </div>
-                  <div class="program-body">
-                    <h3>Preschool</h3>
-                    <p>Our Preschool program fosters early learning through play-based activities, nurturing creativity
-                      and social skills in a supportive environment.</p>
-                    <ul class="program-details">
-                      <li><i class="bi bi-people"></i> Ages 3 - 5</li>
-                      <li><i class="bi bi-mortarboard-fill"></i> Foundational Learning</li>
-                      <li><i class="bi bi-calendar-check"></i> Year-Round</li>
+                  <div class="program-body flex-grow-1 p-4 bg-white">
+                    <h3 class="h5 fw-bold mb-2" style="color: var(--heading-color);">Preschool</h3>
+                    <p class="small text-muted mb-3">Our Preschool program fosters early learning through play-based
+                      activities, nurturing creativity and social skills in a supportive environment.</p>
+                    <ul class="program-details list-unstyled small text-muted mb-0">
+                      <li class="mb-1"><i class="bi bi-people me-2" style="color: var(--accent-color);"></i> Ages 3 - 5
+                      </li>
+                      <li class="mb-1"><i class="bi bi-mortarboard-fill me-2" style="color: var(--accent-color);"></i>
+                        Foundational Learning</li>
+                      <li><i class="bi bi-calendar-check me-2" style="color: var(--accent-color);"></i> Year-Round</li>
                     </ul>
                   </div>
-                  <div class="program-footer">
-                    <a href="#" class="program-link" data-bs-toggle="modal" data-bs-target="#preschoolModal">View
-                      Program <i class="bi bi-arrow-right"></i></a>
+                  <div class="program-footer p-3 bg-light border-top">
+                    <a href="#" class="program-link small fw-semibold" data-bs-toggle="modal"
+                      data-bs-target="#preschoolModal" style="color: var(--accent-color);">
+                      View Program <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
                   </div>
                 </div>
               </div>
 
-              <!-- Elementary School -->
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                <div class="program-item graduate">
+              <!-- Slide: Elementary School -->
+              <div class="swiper-slide">
+                <div class="program-item graduate h-100 d-flex flex-column shadow-sm rounded overflow-hidden">
                   <div class="program-header">
-                    <img src="assets/img/education/programs/elementary.jpeg" alt="Elementary School" class="img-fluid">
+                    <img src="assets/img/education/programs/elementary.jpeg" alt="Elementary School"
+                      class="img-fluid w-100" style="height: 240px; object-fit: cover;">
                   </div>
-                  <div class="program-body">
-                    <h3>Elementary School</h3>
-                    <p>Our Elementary School builds a strong academic foundation with a focus on critical thinking,
-                      collaboration, and hands-on learning.</p>
-                    <ul class="program-details">
-                      <li><i class="bi bi-people"></i> Ages 5 - 11</li>
-                      <li><i class="bi bi-mortarboard-fill"></i> Comprehensive Curriculum</li>
-                      <li><i class="bi bi-calendar-check"></i> Year-Round</li>
+                  <div class="program-body flex-grow-1 p-4 bg-white">
+                    <h3 class="h5 fw-bold mb-2" style="color: var(--heading-color);">Elementary School</h3>
+                    <p class="small text-muted mb-3">Our Elementary School builds a strong academic foundation with a
+                      focus on critical thinking, collaboration, and hands-on learning.</p>
+                    <ul class="program-details list-unstyled small text-muted mb-0">
+                      <li class="mb-1"><i class="bi bi-people me-2" style="color: var(--accent-color);"></i> Ages 5 - 11
+                      </li>
+                      <li class="mb-1"><i class="bi bi-mortarboard-fill me-2" style="color: var(--accent-color);"></i>
+                        Comprehensive Curriculum</li>
+                      <li><i class="bi bi-calendar-check me-2" style="color: var(--accent-color);"></i> Year-Round</li>
                     </ul>
                   </div>
-                  <div class="program-footer">
-                    <a href="#" class="program-link" data-bs-toggle="modal" data-bs-target="#elementaryModal">View
-                      Program <i class="bi bi-arrow-right"></i></a>
+                  <div class="program-footer p-3 bg-light border-top">
+                    <a href="#" class="program-link small fw-semibold" data-bs-toggle="modal"
+                      data-bs-target="#elementaryModal" style="color: var(--accent-color);">
+                      View Program <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
                   </div>
                 </div>
               </div>
 
-              <!-- Middle School -->
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-                <div class="program-item doctoral">
+              <!-- Slide: Middle School -->
+              <div class="swiper-slide">
+                <div class="program-item doctoral h-100 d-flex flex-column shadow-sm rounded overflow-hidden">
                   <div class="program-header">
-                    <img src="assets/img/education/programs/middle.jpeg" alt="Middle School" class="img-fluid">
+                    <img src="assets/img/education/programs/middle.jpeg" alt="Middle School" class="img-fluid w-100"
+                      style="height: 240px; object-fit: cover;">
                   </div>
-                  <div class="program-body">
-                    <h3>Middle School</h3>
-                    <p>Our Middle School program encourages independence and exploration, preparing students for
-                      advanced academics and personal growth.</p>
-                    <ul class="program-details">
-                      <li><i class="bi bi-people"></i> Ages 11 - 14</li>
-                      <li><i class="bi bi-mortarboard-fill"></i> Interdisciplinary Studies</li>
-                      <li><i class="bi bi-calendar-check"></i> Year-Round</li>
+                  <div class="program-body flex-grow-1 p-4 bg-white">
+                    <h3 class="h5 fw-bold mb-2" style="color: var(--heading-color);">Middle School</h3>
+                    <p class="small text-muted mb-3">Our Middle School program encourages independence and exploration,
+                      preparing students for advanced academics and personal growth.</p>
+                    <ul class="program-details list-unstyled small text-muted mb-0">
+                      <li class="mb-1"><i class="bi bi-people me-2" style="color: var(--accent-color);"></i> Ages 11 -
+                        14</li>
+                      <li class="mb-1"><i class="bi bi-mortarboard-fill me-2" style="color: var(--accent-color);"></i>
+                        Interdisciplinary Studies</li>
+                      <li><i class="bi bi-calendar-check me-2" style="color: var(--accent-color);"></i> Year-Round</li>
                     </ul>
                   </div>
-                  <div class="program-footer">
-                    <a href="#" class="program-link" data-bs-toggle="modal" data-bs-target="#middleSchoolModal">View
-                      Program <i class="bi bi-arrow-right"></i></a>
+                  <div class="program-footer p-3 bg-light border-top">
+                    <a href="#" class="program-link small fw-semibold" data-bs-toggle="modal"
+                      data-bs-target="#middleSchoolModal" style="color: var(--accent-color);">
+                      View Program <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
                   </div>
                 </div>
               </div>
 
-              <!-- High School -->
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-                <div class="program-item undergraduate">
+              <!-- Slide: High School -->
+              <div class="swiper-slide">
+                <div class="program-item undergraduate h-100 d-flex flex-column shadow-sm rounded overflow-hidden">
                   <div class="program-header">
-                    <img src="assets/img/education/programs/homeschooling.jpg" alt="High School" class="img-fluid">
+                    <img src="assets/img/education/programs/homeschooling.jpg" alt="High School" class="img-fluid w-100"
+                      style="height: 240px; object-fit: cover;">
                   </div>
-                  <div class="program-body">
-                    <h3>Homeschooling</h3>
-                    <p>Our High School prepares students for college and beyond with rigorous academics, leadership
-                      opportunities, and global perspectives.</p>
-                    <ul class="program-details">
-                      <li><i class="bi bi-people"></i> Ages 14 - 18</li>
-                      <li><i class="bi bi-mortarboard-fill"></i> Home Preparatory</li>
-                      <li><i class="bi bi-calendar-check"></i> Year-Round</li>
+                  <div class="program-body flex-grow-1 p-4 bg-white">
+                    <h3 class="h5 fw-bold mb-2" style="color: var(--heading-color);">High School</h3>
+                    <p class="small text-muted mb-3">Our High School prepares students for university and beyond with
+                      rigorous academics, leadership opportunities, and global perspectives.</p>
+                    <ul class="program-details list-unstyled small text-muted mb-0">
+                      <li class="mb-1"><i class="bi bi-people me-2" style="color: var(--accent-color);"></i> Ages 14 -
+                        18</li>
+                      <li class="mb-1"><i class="bi bi-mortarboard-fill me-2" style="color: var(--accent-color);"></i>
+                        College Preparatory</li>
+                      <li><i class="bi bi-calendar-check me-2" style="color: var(--accent-color);"></i> Year-Round</li>
                     </ul>
                   </div>
-                  <div class="program-footer">
-                    <a href="#" class="program-link" data-bs-toggle="modal" data-bs-target="#highSchoolModal">View
-                      Program <i class="bi bi-arrow-right"></i></a>
+                  <div class="program-footer p-3 bg-light border-top">
+                    <a href="#" class="program-link small fw-semibold" data-bs-toggle="modal"
+                      data-bs-target="#highSchoolModal" style="color: var(--accent-color);">
+                      View Program <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
                   </div>
                 </div>
               </div>
 
-              <!-- Learning Support -->
-              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                <div class="program-item graduate">
+              <!-- Slide: Learning Support -->
+              <div class="swiper-slide">
+                <div class="program-item graduate h-100 d-flex flex-column shadow-sm rounded overflow-hidden">
                   <div class="program-header">
-                    <img src="assets/img/education/programs/learning-support.jpeg" alt="Learning Support" class="img-fluid">
+                    <img src="assets/img/education/programs/learning-support.jpeg" alt="Learning Support"
+                      class="img-fluid w-100" style="height: 240px; object-fit: cover;">
                   </div>
-                  <div class="program-body">
-                    <h3>Learning Support</h3>
-                    <p>Our Learning Support program provides personalized assistance to ensure every student thrives
-                      academically and emotionally.</p>
-                    <ul class="program-details">
-                      <li><i class="bi bi-people"></i> All Ages</li>
-                      <li><i class="bi bi-mortarboard-fill"></i> Individualized Support</li>
-                      <li><i class="bi bi-calendar-check"></i> Year-Round</li>
+                  <div class="program-body flex-grow-1 p-4 bg-white">
+                    <h3 class="h5 fw-bold mb-2" style="color: var(--heading-color);">Learning Support</h3>
+                    <p class="small text-muted mb-3">Our Learning Support program provides personalized assistance to
+                      ensure every student thrives academically and emotionally.</p>
+                    <ul class="program-details list-unstyled small text-muted mb-0">
+                      <li class="mb-1"><i class="bi bi-people me-2" style="color: var(--accent-color);"></i> All Ages
+                      </li>
+                      <li class="mb-1"><i class="bi bi-mortarboard-fill me-2" style="color: var(--accent-color);"></i>
+                        Individualized Support</li>
+                      <li><i class="bi bi-calendar-check me-2" style="color: var(--accent-color);"></i> Year-Round</li>
                     </ul>
                   </div>
-                  <div class="program-footer">
-                    <a href="#" class="program-link" data-bs-toggle="modal" data-bs-target="#learningSupportModal">View
-                      Program <i class="bi bi-arrow-right"></i></a>
+                  <div class="program-footer p-3 bg-light border-top">
+                    <a href="#" class="program-link small fw-semibold" data-bs-toggle="modal"
+                      data-bs-target="#learningSupportModal" style="color: var(--accent-color);">
+                      View Program <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
                   </div>
                 </div>
               </div>
+
             </div>
+
+            <!-- Pagination Only -->
+            <div class="swiper-pagination mt-5"></div>
           </div>
         </div>
 
@@ -385,7 +451,7 @@
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="highSchoolModalLabel">Homeschooling Program</h5>
+                <h5 class="modal-title" id="highSchoolModalLabel">homeschooling Program</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -394,12 +460,13 @@
                     <img src="assets/img/education/activities-2.webp" alt="High School" class="img-fluid rounded">
                   </div>
                   <div class="col-md-6">
-                    <p>Our Homeschooling program (ages 14-18) at Brenitoch Schools prepares students for higher education
-                      and global challenges with a rigorous college-preparatory curriculum, advanced placement courses,
+                    <p>Our homeschooling program (ages 14-18) at Brenitoch Schools prepares students for higher
+                      education
+                      and global challenges with a rigorous School-preparatory curriculum, advanced placement courses,
                       and opportunities for leadership and global engagement.</p>
                     <ul>
-                      <li>College-preparatory and AP courses</li>
-                      <li>Career and college counseling</li>
+                      <li>School-preparatory and AP courses</li>
+                      <li>Career and School counseling</li>
                       <li>Global exchange and internship programs</li>
                     </ul>
                   </div>
@@ -460,7 +527,8 @@
                 <div class="row align-items-center">
                   <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
                     <div class="featured-program-image">
-                      <img src="assets/img/education/education-5.webp" alt="STEM Enrichment Program" class="img-fluid">
+                      <img src="assets/img/education/robotics/codes.jpeg" alt="STEM Enrichment Program"
+                        class="img-fluid">
                       <div class="program-label">
                         <span>Featured</span>
                       </div>
@@ -468,7 +536,7 @@
                   </div>
                   <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
                     <div class="featured-program-content">
-                      <h3>STEM Enrichment Program</h3>
+                      <h3>Coding &amp; Robotics</h3>
                       <p>Our STEM Enrichment Program integrates science, technology, engineering, and mathematics to
                         inspire innovation and problem-solving. Students engage in hands-on projects, coding, and
                         robotics, preparing them for future careers in a technology-driven world.</p>
@@ -574,7 +642,7 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Our School</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="admissions.html">Admissions</a></li>
             <li><a href="academics.html">Academics</a></li>
@@ -586,10 +654,9 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Academics</h4>
           <ul>
-            <li><a href="campus-facilities.html">Campus Facilities</a></li>
+            <li><a href="our-facilities.html">Campus Facilities</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="community.html">Community Engagement</a></li>
-            <li><a href="news.html">News & Updates</a></li>
           </ul>
         </div>
 
@@ -600,7 +667,6 @@
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="feedback.html">Feedback</a></li>
             <li><a href="portal.html">Portal Login</a></li>
-            <li><a href="alumni.html">Alumni</a></li>
           </ul>
         </div>
 
@@ -609,8 +675,7 @@
           <h4>Support</h4>
           <ul>
             <li><a href="financial-aid.html">Financial Aid</a></li>
-            <li><a href="select-btw.html">Business plan &amp; school polices</a></li>
-            <li><a href="student-life.html">Student Life</a></li>
+            <li><a href="student-life.html">Extra-Curricular</a></li>
             <li><a href="employ.html">Employment</a></li>
           </ul>
         </div>

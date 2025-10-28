@@ -47,15 +47,24 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Our School</a></li>
+          <!-- <li class="dropdown"><a href="about.html"><span>About</span> <i
+								class="bi bi-chevron-down toggle-dropdown"></i></a>
+						<ul>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="our-facilities.html">School Facilities &amp; Programs</a></li>
+
+						</ul>
+					</li> -->
           <li><a href="about.html" class="active">About Us</a></li>
 
           <li class="dropdown">
-            <a href="admissions.html"><span>Admissions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <a href="#"><span>Admissions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="admissions.html">Admission Process</a></li>
               <li><a href="fees.html">Fees</a></li>
             </ul>
           </li>
+
           <li class="dropdown">
             <a href="academics.html"><span>Academics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -65,7 +74,6 @@
           </li>
           <li><a href="events.html">Events</a></li>
           <li><a href="employ.html">Employment</a></li>
-          <li><a href="contact.html">Contact</a></li>
           <li class="dropdown"><a href="#"><span>Quick Links</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -75,6 +83,8 @@
               <li><a href="portal.html">Portal Login</a></li>
             </ul>
           </li>
+          <li><a href="contact.html">Contact</a></li>
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -99,7 +109,7 @@
     </div><!-- End Page Title -->
 
     <!-- Employment Section -->
-    <section id="employment" class="employment section">
+    <section id="employment" class="employment section stats students-life section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <!-- Open Employment Opportunities -->
@@ -336,60 +346,83 @@
         </div>
 
       </div>
-    </section><!-- /Employment Section -->
+      <!-- /Employment Section -->
 
-    <!-- Application Modal -->
-    <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-right">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="applyModalLabel">Apply for Position</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form action="forms/apply.php" method="post" enctype="multipart/form-data" class="php-email-form">
-              <div class="row gy-3">
-                <div class="col-md-12">
-                  <label for="name" class="form-label">Full Name</label>
-                  <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name"
-                    required>
+      <!-- Application Modal -->
+      <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-right">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="applyModalLabel">Apply for Position</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="forms/apply.php" method="post" enctype="multipart/form-data" class="php-email-form">
+                <div class="row gy-3">
+                  <div class="col-md-12">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name"
+                      required>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email"
+                      required>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" name="phone" id="phone"
+                      placeholder="Enter your phone number" required>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="position" class="form-label">Position Applying For</label>
+                    <input type="text" class="form-control" name="position" id="position" readonly>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="cover_letter" class="form-label">Cover Letter</label>
+                    <textarea class="form-control" name="cover_letter" id="cover_letter" rows="5"
+                      placeholder="Write your cover letter" required></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="cv" class="form-label">Upload CV (PDF or Word)</label>
+                    <input type="file" class="form-control" name="cv" id="cv" accept=".pdf,.doc,.docx" required>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your application was submitted successfully. Thank you!</div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                  </div>
                 </div>
-                <div class="col-md-12">
-                  <label for="email" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email"
-                    required>
-                </div>
-                <div class="col-md-12">
-                  <label for="phone" class="form-label">Phone Number</label>
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter your phone number"
-                    required>
-                </div>
-                <div class="col-md-12">
-                  <label for="position" class="form-label">Position Applying For</label>
-                  <input type="text" class="form-control" name="position" id="position" readonly>
-                </div>
-                <div class="col-md-12">
-                  <label for="cover_letter" class="form-label">Cover Letter</label>
-                  <textarea class="form-control" name="cover_letter" id="cover_letter" rows="5"
-                    placeholder="Write your cover letter" required></textarea>
-                </div>
-                <div class="col-md-12">
-                  <label for="cv" class="form-label">Upload CV (PDF or Word)</label>
-                  <input type="file" class="form-control" name="cv" id="cv" accept=".pdf,.doc,.docx" required>
-                </div>
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your application was submitted successfully. Thank you!</div>
-                  <button type="submit" class="btn btn-primary">Submit Application</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+	<div class="container" data-aos="fade-up" data-aos-delay="100">
 
+				<div class="cta-wrapper" data-aos="fade-up" data-aos-delay="200">
+					<div class="cta-content">
+						<div class="row align-items-center">
+							<div class="col-lg-8" data-aos="fade-right" data-aos-delay="300">
+								<h3>Ready to Join Our Community?</h3>
+								<p>
+									Step into a school community that celebrates every student’s potential.
+									Discover, learn, and grow with us at Brenitoch.
+								</p>
+							</div>
+							<div class="col-lg-4" data-aos="fade-left" data-aos-delay="400">
+								<div class="cta-buttons">
+									<a href="#" class="btn btn-primary">Schedule a Visit</a>
+									<a href="#" class="btn btn-outline">Apply Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+    </section>
   </main>
 
   <!--Footer details to be added here-->
@@ -405,10 +438,10 @@
             <span class="sitename ms-2">Brenitoch School</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Brenitoch School, Juja</p>
+            <p>Brenitoch School, Thika</p>
             <p>Kiambu County, Kenya</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+254 712 345 678</span></p>
-            <p><strong>Email:</strong> <span>info@brenitoch.ac.ke</span></p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+254 725293622</span></p>
+            <p><strong>Email:</strong> <span>schoolsbrenitoch@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href="#"><i class="bi bi-facebook"></i></a>
@@ -437,7 +470,6 @@
             <li><a href="our-facilities.html">School Facilities</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="community.html">Community Engagement</a></li>
-            <li><a href="news.html">News & Updates</a></li>
           </ul>
         </div>
 
@@ -446,7 +478,6 @@
           <h4>Resources</h4>
           <ul>
             <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
             <li><a href="portal.html">Portal Login</a></li>
           </ul>
         </div>
@@ -470,6 +501,8 @@
 
     </div>
   </footer>
+
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
